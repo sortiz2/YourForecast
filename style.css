@@ -1,10 +1,7 @@
 .card-img-top-time {
     width: 100%;
 }
-.card-img-icon{
-    height: 15rem;
-    object-fit: cover;
-}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     background: white;
@@ -59,7 +56,7 @@ body{
     line-height: 1em;
     font-weight: 700;
     font-size: 1em;
-    text-transform: capitilize;
+    text-transform: capitalize;
 }
 
 .high::before{
@@ -80,11 +77,6 @@ body{
     display: inline-block;
     position: relative;
     top: 3px;
-}
-.icon-container{
-    border-radius: 100%;
-    width: 100%;
-    height: 75px;
 }
 
 .icon-container img{
