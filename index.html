@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>YourForecast</title> 
+        <link 
+        rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <a class="navbar-brand" href="#">Home</a>
+              <a class="navbar-brand" href="#">10-Day</a>
+              <a class="navbar-brand" href="#">Almanac</a>
+              <a class="navbar-brand" href="#">Contact Us</a>
+            </nav>
+          </div>
+        <div class="container my-5">
+            <h1 class="text-center title">YourForecast</h1>
+                <form class="search-location">
+                    <input
+                        type="text"
+                        name="location"
+                        placeholder="City"
+                        autocomplete="off"
+                        class="form-control p-4 shadow-sm"
+                    />
+                </form>
+                <div class="card my-3 shadow-lg back-card">
+                    <div class="card-top text-center">
+                        <div class="city-name my-3">
+                            <p>Louisville</p>
+                            <span>...</span>
+                        </div>
+                        <img src="img/night.jpg" class="card-img-top-time" alt=""/>                       
+                    </div>
+                    <div class="card-body" >  
+                        <div class="card-mid row">
+                            <div class="col text-center temp">
+                                <span>60&deg;F</span>
+                            </div>
+                            <div class="col condition-temp">
+                                <p class="condition">Thunder Storm</p>
+                                <p class="high">60&deg;F</p>
+                                <p class="low">65&deg;F</p>
+                            </div>         
+                        </div>
+                        <div class="icon-container card shadow mx-auto">
+                            <img src="img/cloud.png" class="card-img-icon" alt=""/>
+                        </div>
+                        <div class="card-bottom px-5 py-4 row">
+                            <div class="col text-center">
+                                <p>80&deg;F</p>
+                                <span>Feels Like</span>
+                            </div>
+                            <div class="col text-center">
+                                <p>65%</p>
+                                <span>Humidity</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <script src="request.js"></script>
+        <script src="index.js"></script>
+    </body>
+
+</html>
