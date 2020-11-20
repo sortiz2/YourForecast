@@ -1,5 +1,7 @@
 .card-img-top-time {
     width: 100%;
+    border-radius: 25%;
+    margin: auto;
 }
 
 body{
@@ -9,7 +11,9 @@ body{
     margin: 0;
     padding:0;
 }
-
+.city-name{
+    color: white;
+}
 .container{
     max-width: 400px;
     min-width: 400px;
@@ -17,7 +21,7 @@ body{
 
 .title{
     font-weight: 700;
-    font-size: 50 px;
+    font-size: 50px;
 }
 
 .form-rounded{
@@ -60,8 +64,6 @@ body{
 }
 
 .high::before{
-    content: '';
-    background: url('img/up.png') no-repeat;
     width: 10px;
     height: 15px;
     display: inline-block;
@@ -70,8 +72,6 @@ body{
 }
 
 .low::before{
-    content: '';
-    background: url('img/down.png') no-repeat;
     width: 10px;
     height: 15px;
     display: inline-block;

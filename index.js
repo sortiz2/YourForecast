@@ -3,6 +3,7 @@ const cityValue = document.querySelector('.search-location input');
 const cityName= document.querySelector('.city-name p');
 const cardBody = document.querySelector('.card-body');
 const time = document.querySelector('.card-top img');
+const hidecardInfo = document.querySelector('.back-card');
 
 const F =(kelvin)=>{
     farh = Math.round((kelvin - 273.15) * 9/5 + 32);
@@ -52,6 +53,8 @@ updateWeather = (city)=>{
             console.log('night');
             time.setAttribute('src', 'img/night.jpg');
         }
+
+    hidecardInfo.classList.remove('d-none');
 }
 
 searchForm.addEventListener('submit', e =>{
