@@ -5,10 +5,11 @@ const cardBody = document.querySelector('.card-body');
 const time = document.querySelector('.card-top img');
 const hidecardInfo = document.querySelector('.back-card');
 
-const F =(kelvin)=>{
-    farh = Math.round((kelvin - 273.15) * 9/5 + 32);
-    return farh;
-}
+//Units converted in request.js file 
+// const F =(kelvin)=>{
+  //  farh = Math.round((kelvin - 273.15) * 9/5 + 32);
+    //return farh;
+//}
 
 const timeOfDay = (icon) => {
     if (icon.includes ('d')) {return true}
@@ -24,12 +25,12 @@ updateWeather = (city)=>{
     <div class="card body" > 
         <div class="card-mid row">
                 <div class="col text-center temp">
-                    <span>${F(city.main.temp)}&deg;F</span>
+                    <span>${Math.round(city.main.temp)}&deg;F</span>
                 </div>
                 <div class="col condition-temp">
                     <p class="condition">${city.weather[0].description}</p>
-                    <p class="high">${F(city.main.temp_max)}&deg;F</p>
-                    <p class="low">${F(city.main.temp_min)}&deg;F</p>
+                    <p class="high">${Math.round(city.main.temp_max)}&deg;F</p>
+                    <p class="low">${Math.round(city.main.temp_min)}&deg;F</p>
                 </div>         
             </div>
             <div class="icon-container card shadow mx-auto">
@@ -37,7 +38,7 @@ updateWeather = (city)=>{
             </div>
             <div class="card-bottom px-5 py-4 row">
                 <div class="col text-center">
-                    <p>${F(city.main.feels_like)}&deg;F</p>
+                    <p>${Math.round(city.main.feels_like)}&deg;F</p>
                     <span>Feels Like</span>
                 </div>
                 <div class="col text-center">
