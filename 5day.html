@@ -14,13 +14,13 @@
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
               <a class="navbar-brand" href="index.html">Home</a>
               <a class="navbar-brand" href="5day.html">5-Day</a>
-              <a class="navbar-brand" href="#">Almanac</a>
+              <a class="navbar-brand" href="almanac.html">Almanac</a>
               <a class="navbar-brand" href="contact.html">Contact Us</a>
             </nav>
           </div>
         <div class="container my-5">
-            <h1 class="text-center title">YourForecast</h1>
-                <form class="search-location">
+            <h1 class="text-center title">Your Forecast</h1>
+                <form class="search-locations">
                     <input
                         type="text"
                         name="location"
@@ -30,27 +30,73 @@
                     />
                 </form>
         </div>
-
-        <div class="container-lg">
-            <div class="card-body text-center">
-                <div class="weather-date-location">
-                    <h3>Friday</h3>
-                    <p class="text-gray"> <span class="weather-date">25 March, 2019</span> <span class="weather-location">Sydney, Australia</span> </p>
-                </div>
+        <div class="card my-3 back-card d-none">
+            <div class="card-top text-center">
+                <div class="city-names my-3">
+                    <p>Louisville</p>
+                    <span>...</span>
+                </div>    
+            </div>
+        </div>                     
+            
+        <div class="container-lg d-none">
+            <div class="card-bodys text-center">
                 <div class="container">
                     <div class="row">
-                      <div class="card col">Day 1</div>
-                      <div class="card col">Day 2</div>
-                      <div class="card col">Day 3</div>
-                      <div class="card col">Day 4</div>
-                      <div class="card col">Day 5</div>
+                      <div class="card col date">Date
+                          <div class = "icon"
+                            <img src="img/cloud.png"/>
+                          </div>
+                        <div class = "temp">
+                          <p>TEMP</p>
+                          <p>MIN</p>
+                          <p>MAX</p>
+                        </div>  
+                      </div>
+                      <div class="card col">Day 2
+                        <div class = "icon"
+                        <img src=''>
+                      </div>
+                    <div class = "temp">
+                      <p>TEMP</p>
+                      <p>MIN</p>
+                      <p>MAX</p>
+                    </div> 
+                      </div>
+                      <div class="card col">Day 3
+                        <div class = "icon"
+                        <img src=''>
+                      </div>
+                    <div class = "temp">
+                      <p>TEMP</p>
+                      <p>MIN</p>
+                      <p>MAX</p>
+                    </div> 
+                      </div>
+                      <div class="card col">Day 4
+                        <div class = "icon"
+                        <img src=''>
+                      </div>
+                    <div class = "temp">
+                      <p>TEMP</p>
+                      <p>MIN</p>
+                      <p>MAX</p>
+                    </div> 
+                      </div>
+                      <div class="card col">Day 5
+                        <div class = "icon"
+                        <img src=''>
+                      </div>
+                    <div class = "temp">
+                      <p>TEMP</p>
+                      <p>MIN</p>
+                      <p>MAX</p>
+                    </div> 
+                      </div>
                     </div>    
-                </div> 
-            </div>
-        </div>    
-
+    
         <script src="request.js"></script>
-        <script src="index.js"></script>
+        <script src="index5day.js"></script>
     </body>
 
 </html>

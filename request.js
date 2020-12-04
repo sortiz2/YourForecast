@@ -10,3 +10,14 @@ const requestCity = async (city) => {
     return data;
 
 }
+
+const fiveDay = async (city5Day) => {
+    const baseURL5Day = 'http://api.openweathermap.org/data/2.5/forecast'
+    const query5Day = `?q=${city5Day}&units=imperial&appid=${key}`;
+
+    const respond = await fetch(baseURL5Day + query5Day);
+
+    const datas = await respond.json();
+    return datas;
+
+}

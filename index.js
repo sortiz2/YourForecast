@@ -58,6 +58,7 @@ updateWeather = (city)=>{
     hidecardInfo.classList.remove('d-none');
 }
 
+
 searchForm.addEventListener('submit', e =>{
     e.preventDefault();
     const citySearch = cityValue.value.trim();
@@ -70,3 +71,5 @@ searchForm.addEventListener('submit', e =>{
         }) 
         .catch((error)=>{console.log(error)})
 })
+
+
