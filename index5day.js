@@ -7,6 +7,8 @@ const hideWeather = document.querySelector('.container-lg');
 
 fiveDayWeather = (city5Day)=>{
     console.log(city5Day);
+    const images = city5Day.list[0].weather[0].icon;
+    const iconSources = `http://openweathermap.org/img/wn/${images}@2x.png`
     cityNames.textContent = city5Day.city.name;
     cardBodys.innerHTML = `
     <div class="card-bodys text-center">
@@ -27,7 +29,7 @@ fiveDayWeather = (city5Day)=>{
                       Date & Time <br>
                       ${(city5Day.list[4].dt_txt)}
                         <div class = "icon-container card shadow mx-auto">
-                            <img src= ${`https://openweathermap.org/img/wn/${city5Day.list[4].weather[0].icon}@2x.png`} class="card-img-icon" alt=""/>
+                            <img src= ${`http://openweathermap.org/img/wn/${city5Day.list[4].weather[0].icon}@2x.png`} class="card-img-icon" alt=""/>
                         <span> . . . </span>
                     </div>
                     <div class = "temp">
@@ -39,7 +41,7 @@ fiveDayWeather = (city5Day)=>{
                       Date & Time <br>
                       ${(city5Day.list[12].dt_txt)}
                       <div class = "icon-container card shadow mx-auto">
-                        <img src= ${`https://openweathermap.org/img/wn/${city5Day.list[12].weather[0].icon}@2x.png`} class="card-img-icon" alt=""/>
+                        <img src= ${`http://openweathermap.org/img/wn/${city5Day.list[12].weather[0].icon}@2x.png`} class="card-img-icon" alt=""/>
                         <span> . . . </span>
                     </div>
                     <div class = "temp">
@@ -51,7 +53,7 @@ fiveDayWeather = (city5Day)=>{
                       Date & Time <br>
                       ${(city5Day.list[20].dt_txt)}
                       <div class = "icon-container card shadow mx-auto">
-                      <img src= ${`https://openweathermap.org/img/wn/${city5Day.list[20].weather[0].icon}@2x.png`} class="card-img-icon" alt=""/>
+                      <img src= ${`http://openweathermap.org/img/wn/${city5Day.list[20].weather[0].icon}@2x.png`} class="card-img-icon" alt=""/>
                       <span> . . . </span>
                     </div>
                     <div clas
@@ -64,7 +66,7 @@ fiveDayWeather = (city5Day)=>{
                       Date & Time <br>
                       ${(city5Day.list[28].dt_txt)}
                       <div class = "icon-container card shadow mx-auto">
-                        <img src= ${`https://openweathermap.org/img/wn/${city5Day.list[28].weather[0].icon}@2x.png`} class="card-img-icon" alt=""/>
+                        <img src= ${`http://openweathermap.org/img/wn/${city5Day.list[28].weather[0].icon}@2x.png`} class="card-img-icon" alt=""/>
                       <span> . . . </span>
                     </div>
                   <div clas

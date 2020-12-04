@@ -19,7 +19,7 @@ const timeOfDay = (icon) => {
 updateWeather = (city)=>{
     console.log(city);
     const image = city.weather[0].icon;
-    const iconSource = `http://openweathermap.org/img/wn/${image}@2x.png`
+    const iconSource = `https://openweathermap.org/img/wn/${image}@2x.png`
     cityName.textContent = city.name;
     cardBody.innerHTML = `
     <div class="card body" > 
@@ -29,8 +29,8 @@ updateWeather = (city)=>{
                 </div>
                 <div class="col condition-temp">
                     <p class="condition">${city.weather[0].description}</p>
-                    <p class="high">${Math.round(city.main.temp_max)}&deg;F</p>
-                    <p class="low">${Math.round(city.main.temp_min)}&deg;F</p>
+                    <p class="high">High ${Math.round(city.main.temp_max)}&deg;F</p>
+                    <p class="low">Low ${Math.round(city.main.temp_min)}&deg;F</p>
                 </div>         
             </div>
             <div class="icon-container card shadow mx-auto">
