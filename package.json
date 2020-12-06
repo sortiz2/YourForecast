@@ -1,0 +1,24 @@
+{
+  "name": "YourForecast",
+  "version": "1.0.0",
+  "description": "Project Overview:\r “Your Forecast” is a weather website where users can view weather around the world. Users can search their location as well as others. This website will also show weather news including major weather happenings. This website would also provide alerts to users about upcoming bad weather. This project is also able to show years previous weather and future predictive weather up to year in advance. This project will help users better plan their days activities as well as attire. This project will also help protect those who could be in high impact areas such as along the coast where hurricanes are likely to occur.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sortiz2/YourForecast.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sortiz2/YourForecast/issues"
+  },
+  "homepage": "https://github.com/sortiz2/YourForecast#readme",
+  "dependencies": {
+    "mongoose": "^5.11.4",
+    "validator": "^13.5.1"
+  }
+}

@@ -78,7 +78,7 @@ fiveDayWeather = (city5Day)=>{
                     </div>`;
     
                     hidecardInfo.classList.remove('d-none');
-                    hideWeather.classList.remove('d-none');
+                    hideWeather.classList.remove('d-none')
 
 }
 

@@ -21,3 +21,4 @@ const fiveDay = async (city5Day) => {
     return datas;
 
 }
+

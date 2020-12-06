@@ -93,3 +93,7 @@ body{
     font-weight: 100;
     letter-spacing: -2px;
 }
+.navbar {
+    margin: auto;
+    text-align: center;
+}
